@@ -164,7 +164,10 @@ function getProjectContent(projectId) {
                             <div class="description-bg">
                                 <div class="project-description">
                                     <p>
-                                        I'm Murilo Glasser, a Generalist Game Programmer with five years of experience in the gaming industry. I've worked on various platforms, including VR, AR, mobile, web, consoles like Nintendo Switch, PlayStation, Xbox, and Steam. My academic background at Centro Universitário (FACENS) and São Paulo Technical School (ETEC) equipped me with solid skills in digital technology, programming, agile methodologies, and software development.
+                                        🕹️Hey there, I'm Dinh Trong, a game developer with a deep passion for Unity. I'm actively building my skills, constantly learning new techniques and experimenting with different gameplay mechanics.    
+                                    </p>
+                                    <p>
+                                        🎮 If you're looking for a passionate fresher who thrives on challenges and loves to learn, let's connect!
                                     </p>
                                 </div>
                             </div>
@@ -183,16 +186,7 @@ function getProjectContent(projectId) {
                                     <img src="Images/clanguage.png">
                                 </a>
 
-                                <a target="_blank" class="stack-icon" style="margin-left: 6px">
-                                    <img src="Images/javascript.png">
-                                </a>
-
-                                <a target="_blank" class="stack-icon" style="margin-left: 6px">
-                                    <img src="Images/htmllanguage.png">
-                                </a>
-
-                                <a target="_blank" class="stack-icon" style="margin-left: 6px">
-                                    <img src="Images/construct3.png">
+                                
                                 </a>
                             </div>
 
@@ -245,10 +239,10 @@ function getProjectContent(projectId) {
 `                   ;
             break;
         case 'project1':
-            videoId = 'N4vmPq09dN4?si=eyzXwmLVzzDp4Ayt';
+            videoId = 'ERemgK_XnXw';
             projectContent = `
                             <div class="title-bg">
-                                <h2 class="project-title">Cobra Kai 2</h2>
+                                <h2 class="project-title">Move Stop Move</h2>
                             </div>
 
                             <div class="project-video-BG">
@@ -259,27 +253,15 @@ function getProjectContent(projectId) {
 
                             <div class="description-bg">
                                 <div class="project-description">
-                                    <p>Cobra Kai 2 is a fighting game featuring immersive gameplay and dynamic combat mechanics. Players choose between Eagle Fang, Cobra Kai, or Miyagi-do dojos, recruiting powerful teams and mastering unique fighting styles to become the All Valley Karate Grand Champion.</p>
+                                    <p>A casual 3D game. Control the character's movement using a joystick and freely move around the map. Numerous enemies will appear and attack with their weapons. Dodge their attacks and fight back. The more enemies you defeat, the bigger you become. Victory is achieved by being the last survivor.</p>
                                 </div>
                             </div>
 
                             <div class="project-links">
                                 <h2>Links</h2>
 
-                                <a href="https://store.steampowered.com/app/1681870/Cobra_Kai_2_Dojos_Rising/" target="_blank" class="social-icon device" style="margin-left: 6px">
-                                    <img src="Images/Steam.png" alt="Github">
-                                </a>
-
-                                <a href="https://store.playstation.com/pt-br/product/UP0283-PPSA04644_00-4810208968054641" target="_blank" class="social-icon device" style="margin-left: 6px">
-                                    <img src="Images/Playstation.png" alt="Github">
-                                </a>
-
-                                <a href="https://www.xbox.com/pt-BR/games/store/cobra-kai-2-dojos-rising/9NP4WZNSN0NN" target="_blank" class="social-icon device" style="margin-left: 6px">
-                                    <img src="Images/Xbox.png" alt="Github">
-                                </a>
-
-                                <a href="https://www.nintendo.com/pt-br/store/products/cobra-kai-2-dojos-rising-switch/" target="_blank" class="social-icon device" style="margin-left: 6px">
-                                    <img src="Images/Nintendo.png" alt="Github">
+                                <a href="https://github.com/TDTer/MoveStopMove_DinhTrong" target="_blank" class="social-icon device" style="margin-left: 6px">
+                                    <img src="Images/git.png" alt="Github">
                                 </a>
                             </div>
 
@@ -289,10 +271,10 @@ function getProjectContent(projectId) {
 `                   ;
             break;
         case 'project2':
-            videoId = 'FlSIC41wyX4?si=sri-3iJzy4L83Xct';
+            videoId = 'eoSVpyv1kbY';
             projectContent = `
                         <div class="title-bg">
-                                <h2 class="project-title">Mega Button Soccer</h2>
+                                <h2 class="project-title">Bridge Race</h2>
                             </div>
 
                             <div class="project-video-BG">
@@ -303,15 +285,15 @@ function getProjectContent(projectId) {
 
                             <div class="description-bg">
                                 <div class="project-description">
-                                    <p>Mega Button Soccer is a game that reinvents traditional button soccer with engaging gameplay. Follow the journey of Cauã as he strives to become the greatest button soccer player on Aru-Açu Island, navigating challenges and showcasing strategic skills.</p>
+                                    <p>3D casual game. Use a joystick to control the character's movements. Bridges are used to divide the successive stages. In order build bridges, player must compete against enemy bots and  collect dispersed bricks of the same color on each stage in order to eventually reach the destination.</p>
                                 </div>
                             </div>
 
                             <div class="project-links">
                                 <h2>Links</h2>
 
-                                <a href="https://store.steampowered.com/app/2290440/Mega_Button_Soccer/" target="_blank" class="social-icon device" style="margin-left: 0px">
-                                    <img src="Images/Steam.png" alt="Github">
+                                <a href="https://github.com/TDTer/BridgeRace_DinhTrong" target="_blank" class="social-icon device" style="margin-left: 0px">
+                                    <img src="Images/Git.png" alt="Github">
                                 </a>
                             </div>
 
@@ -322,10 +304,10 @@ function getProjectContent(projectId) {
 `                   ;
             break;
         case 'project3':
-            videoId = 'MuOGtenrr8k?si=njIRm4660M5-CjWU';
+            videoId = 'iWKZawT7iTk';
             projectContent = `
                         <div class="title-bg">
-                                <h2 class="project-title">Food Boy</h2>
+                                <h2 class="project-title">Stack Maker</h2>
                             </div>
 
                             <div class="project-video-BG">
@@ -336,22 +318,15 @@ function getProjectContent(projectId) {
 
                             <div class="description-bg">
                                 <div class="project-description">
-                                    <p>Food Boy is a console arcade game that combines the classic Paperboy vibe with modern food delivery services. Players navigate urban settings, delivering pizzas with precision while unlocking new cities, skins, and challenges. Master the art of pizza delivery in this exciting and challenging arcade experience.</p>
+                                    <p>Casual 3D game. The goal is to collect bricks along the way to cross  bridges and find the path to the finish line with the highest number of remaining bricks.</p>
                                 </div>
                             </div>
 
                             <div class="project-links">
                                 <h2>Links</h2>
-
-
-                                <a href="https://store.steampowered.com/app/2331990/Food_Boy/" target="_blank" class="social-icon device" style="margin-left: 6px">
-                                    <img src="Images/Steam.png" alt="Github">
+                                <a href="https://github.com/TDTer/StackMaker_DinhTrong" target="_blank" class="social-icon device" style="margin-left: 6px">
+                                    <img src="Images/Git.png" alt="Github">
                                 </a>
-
-                                <a href="https://store.playstation.com/pt-br/concept/10007747" target="_blank" class="social-icon device" style="margin-left: 6px">
-                                    <img src="Images/Playstation.png" alt="Github">
-                                </a>
-                             
                             </div>
 
 
