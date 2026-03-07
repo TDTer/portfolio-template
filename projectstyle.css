@@ -7,7 +7,7 @@ section {
     padding: 25px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding-bottom: 90px;
     padding-top: 33px;
     margin-bottom: -10px;
@@ -89,7 +89,7 @@ body {
         padding: 205px;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: flex-start;
         padding-bottom: 90px;
         padding-top: 33px;
     }
@@ -103,7 +103,7 @@ body {
         padding: 395px;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: flex-start;
         padding-bottom: 90px;
         padding-top: 33px;
     }
@@ -130,7 +130,7 @@ body {
         padding: 40px;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: flex-start;
         padding-bottom: 90px;
         padding-top: 33px;
     }

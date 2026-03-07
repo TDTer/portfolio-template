@@ -10,6 +10,7 @@ function returnBody(modalType) {
 }
 
 function openModal(projectId) {
+    window.location.hash = projectId;
     changeClass('modal-content');
     var modal = document.getElementById("myModal");
     var modalContent = document.getElementById("modalContent");
@@ -61,6 +62,9 @@ function openModalContact(projectId) {
 }
 
 function closeModal() {
+    if (window.location.hash) {
+        history.replaceState('', document.title, window.location.pathname + window.location.search);
+    }
     var modal = document.getElementById("myModal");
     var youtubeVideo = document.getElementById("youtubeVideo");
     returnBody();
@@ -164,10 +168,10 @@ function getProjectContent(projectId) {
                             <div class="description-bg">
                                 <div class="project-description">
                                     <p>
-                                        🕹️Hey there, I'm Dinh Trong, a game developer with a deep passion for Unity. I'm actively building my skills, constantly learning new techniques and experimenting with different gameplay mechanics.    
+                                        🕹️ Hey there, I'm Dinh Trong, a dedicated Game Developer specializing in both <strong>Unity</strong> and <strong>Cocos Creator</strong>. I have a strong passion for bringing creative ideas to life and delivering engaging interactive experiences directly to users' fingertips.
                                     </p>
                                     <p>
-                                        🎮 If you're looking for a passionate fresher who thrives on challenges and loves to learn, let's connect!
+                                        🚀 I love tackling complex technical challenges and learning new tech stacks. If you're looking for a driven developer with a track record of delivering engaging, cross-platform games, let's connect!
                                     </p>
                                 </div>
                             </div>
@@ -175,18 +179,27 @@ function getProjectContent(projectId) {
                             <div class="project-stack">
                                 <h2>Stack</h2>
                                 <a target="_blank" class="stack-icon" style="margin-left: 6px">
-                                    <img src="Images/unity.png">
+                                    <img src="Images/cocos.png" alt="Cocos Creator">
                                 </a>
 
                                 <a target="_blank" class="stack-icon" style="margin-left: 6px">
-                                    <img src="Images/csharp.png">
+                                    <img src="Images/unity.png" alt="Unity">
+                                </a>
+
+                                <a target="_blank" class="stack-icon" style="margin-left: 6px">
+                                    <img src="Images/csharp.png" alt="C#">
                                 </a>                             
 
                                 <a target="_blank" class="stack-icon" style="margin-left: 6px">
-                                    <img src="Images/clanguage.png">
+                                    <img src="Images/javascript.png" alt="JavaScript">
                                 </a>
 
-                                
+                                <a target="_blank" class="stack-icon" style="margin-left: 6px">
+                                    <img src="Images/typescript.png" alt="TypeScript">
+                                </a>
+
+                                <a target="_blank" class="stack-icon" style="margin-left: 6px">
+                                    <img src="Images/htmllanguage.png" alt="HTML5 / WebGL">
                                 </a>
                             </div>
 
@@ -238,7 +251,7 @@ function getProjectContent(projectId) {
                             </div>
 `                   ;
             break;
-        case 'project1':
+        case 'movestopmove':
             videoId = 'ERemgK_XnXw';
             projectContent = `
                             <div class="title-bg">
@@ -270,7 +283,7 @@ function getProjectContent(projectId) {
                             </div>
 `                   ;
             break;
-        case 'project2':
+        case 'bridgerace':
             videoId = 'eoSVpyv1kbY';
             projectContent = `
                         <div class="title-bg">
@@ -303,7 +316,7 @@ function getProjectContent(projectId) {
                             </div>
 `                   ;
             break;
-        case 'project3':
+        case 'stackmaker':
             videoId = 'iWKZawT7iTk';
             projectContent = `
                         <div class="title-bg">
@@ -335,34 +348,37 @@ function getProjectContent(projectId) {
                             </div>
 `                   ;
             break;
-        case 'project4':
-            videoId = 'gT8AB68s_2k?si=9lWQuuRO1j9Kbjin';
+        case 'screwland3d':
             projectContent = `
                         <div class="title-bg">
-                                <h2 class="project-title">Joy & Toy</h2>
+                                <h2 class="project-title">Screw Land 3D</h2>
                             </div>
 
                             <div class="project-video-BG">
-                            <div class="project-video">
-                                <iframe id="youtubeVideo" width="560" height="315" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allowfullscreen></iframe>
+                            <div class="project-video" style="display:flex;justify-content:center;align-items:center;min-height:660px;">
+                                <iframe id="youtubeVideo"
+                                    src="Playables/ScrewLand3d.html"
+                                    style="width:360px;height:640px;border:none;"
+                                    frameborder="0"
+                                    allowfullscreen></iframe>
                             </div>
                             </div>
 
                             <div class="description-bg">
                                 <div class="project-description">
-                                    <p>Joy & Toy is a mobile game designed as a promotional initiative for the renowned soap opera "Poliana" on SBT TV network. Players embark on an engaging adventure, combating depression and spreading happiness. Guide characters through challenges, fostering positivity, and contributing to a meaningful journey towards mental well-being.</p>
+                                    <p>A casual 3D puzzle game. Unscrew bolts to release colorful wood pieces — match and collect pieces of the same color to clear each level and advance.</p>
                                 </div>
                             </div>
 
                             <div class="project-links">
                                 <h2>Links</h2>
-                                <a href="https://play.google.com/store/search?q=Joy%20%26%20toy&c=apps" target="_blank" class="social-icon device" style="margin-left: 6px">
-                                    <img src="Images/Playstore.png" alt="Github">
+                                <a href="https://play.google.com/store/apps/details?id=com.woodpuzzle.pin3d" target="_blank" class="social-icon device" style="margin-left: 6px">
+                                    <img src="Images/Playstore.png" alt="Google Play">
                                 </a>
 
-                                <a href="https://apps.apple.com/br/app/aventuras-de-poliana-joy-toy/id1481899470" target="_blank" class="social-icon device" style="margin-left: 6px">
-                                    <img src="Images/Appstore.png" alt="Github">
-                                </a>                               
+                                <a href="https://apps.apple.com/us/app/wood-nuts-3d/id6740447022" target="_blank" class="social-icon device" style="margin-left: 6px">
+                                    <img src="Images/Appstore.png" alt="App Store">
+                                </a>
                             </div>
 
 
@@ -371,28 +387,39 @@ function getProjectContent(projectId) {
                             </div>
 `                   ;
             break;
-        case 'project5':
-            videoId = 'cs_BVRnD4QU?si=wNPxuS40Bg4ij1Vz';
+        case 'cakejamout':
             projectContent = `
                         <div class="title-bg">
-                                <h2 class="project-title">Hot Potato</h2>
+                                <h2 class="project-title">Cake Jam Out</h2>
                             </div>
 
                             <div class="project-video-BG">
-                            <div class="project-video">
-                                <iframe id="youtubeVideo" width="560" height="315" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allowfullscreen></iframe>
+                            <div class="project-video" style="display:flex;justify-content:center;align-items:center;min-height:660px;">
+                                <iframe id="youtubeVideo"
+                                    src="Playables/CakeJamOut.html"
+                                    style="width:360px;height:640px;border:none;"
+                                    frameborder="0"
+                                    allowfullscreen></iframe>
                             </div>
                             </div>
 
                             <div class="description-bg">
                                 <div class="project-description">
-                                    <p>    <p>Hot Potato is an engaging multiplayer game designed for four players, set in a vibrant and interactive environment. Players use specially crafted wooden joysticks to control the game, creating a unique and tactile gaming experience that brings people together for a thrilling and immersive gameplay session.</p>
+                                    <p>
+                                        <strong>Cake Jam Out</strong> is a sweet puzzle where you sort, stack, and match mouth-watering cake layers to complete orders. Plan your moves carefully as space is limited! Enjoy relaxing yet challenging gameplay with dozens of colorful cake designs to unlock and cheerful music to keep you entertained.
+                                    </p>
                                 </div>
                             </div>
 
                             <div class="project-links">
                                 <h2>Links</h2>
-                                <h4>This project does not have available links.</h4>                                
+                                <a href="https://play.google.com/store/apps/details?id=cake.jam.sort" target="_blank" class="social-icon device" style="margin-left: 6px">
+                                    <img src="Images/Playstore.png" alt="Google Play">
+                                </a>
+
+                                <a href="https://apps.apple.com/app/cake-roll-out/id6752802390" target="_blank" class="social-icon device" style="margin-left: 6px">
+                                    <img src="Images/Appstore.png" alt="App Store">
+                                </a>
                             </div>
 
                             <div class="close">
@@ -400,33 +427,36 @@ function getProjectContent(projectId) {
                             </div>
 `                   ;
             break;
-        case 'project6':
-            videoId = 'eK7_MLSFprU?si=GgySrIEi62Ylybsh';
+        case 'dinerstory':
             projectContent = `
                          <div class="title-bg">
-                                <h2 class="project-title">Trader's Life</h2>
+                                <h2 class="project-title">Diner Story: Merge Cook Decor</h2>
                             </div>
 
                             <div class="project-video-BG">
-                            <div class="project-video">
-                                <iframe id="youtubeVideo" width="560" height="315" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allowfullscreen></iframe>
+                            <div class="project-video" style="display:flex;justify-content:center;align-items:center;min-height:660px;">
+                                <iframe id="youtubeVideo"
+                                    src="Playables/DinerStoryMergeCookDecor.html"
+                                    style="width:360px;height:640px;border:none;"
+                                    frameborder="0"
+                                    allowfullscreen></iframe>
                             </div>
                             </div>
 
                             <div class="description-bg">
                                 <div class="project-description">
-                                    <p>Trader's Life is an immersive 2D/3D game designed to empower newcomers in the world of trading. Demystify the complexities of the trade business, providing players with a comfortable space to navigate intricate brokerage jargon and applications, making the trade experience accessible and enjoyable.</p>
+                                    <p>A merge puzzle game for mobile devices. Discover and combine various food items to reveal new recipes and decorate your diner.</p>
                                 </div>
                             </div>
 
                             <div class="project-links">
                                 <h2>Links</h2>
-                                <a href="https://play.google.com/store/apps/details?id=com.liga.traderlife&hl=pt_BR&gl=US" target="_blank" class="social-icon device" style="margin-left: 6px">
-                                    <img src="Images/Playstore.png" alt="Github">
+                                <a href="https://play.google.com/store/apps/details?id=com.merge.cooking.diner.chef.restaurant.story" target="_blank" class="social-icon device" style="margin-left: 6px">
+                                    <img src="Images/Playstore.png" alt="Google Play">
                                 </a>
 
-                                <a href="https://apps.apple.com/br/app/traders-life/id1475175020" target="_blank" class="social-icon device" style="margin-left: 6px">
-                                    <img src="Images/Appstore.png" alt="Github">
+                                <a href="https://apps.apple.com/vn/app/diner-story-merge-cook-decor/id6740476882" target="_blank" class="social-icon device" style="margin-left: 6px">
+                                    <img src="Images/Appstore.png" alt="App Store">
                                 </a>
                             </div>                  
 
@@ -435,28 +465,39 @@ function getProjectContent(projectId) {
                             </div>
 `                   ;
             break;
-        case 'project7':
-            videoId = '6iZYMm5oXdk?si=OHhVYIERtpBtTUa0';
+        case 'popcornlegend':
             projectContent = `
                         <div class="title-bg">
-                                <h2 class="project-title">Anitta Boss Game</h2>
+                                <h2 class="project-title">Popcorn Legend</h2>
                             </div>
 
                             <div class="project-video-BG">
-                            <div class="project-video">
-                                <iframe id="youtubeVideo" width="560" height="315" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allowfullscreen></iframe>
+                            <div class="project-video" style="display:flex;justify-content:center;align-items:center;min-height:660px;">
+                                <iframe id="youtubeVideo"
+                                    src="Playables/PopcornLegend.html"
+                                    style="width:360px;height:640px;border:none;"
+                                    frameborder="0"
+                                    allowfullscreen></iframe>
                             </div>
                             </div>
 
                             <div class="description-bg">
                                 <div class="project-description">
-                                    <p>Anitta Boss Game is a web game serving as a powerful promotional tool. It enhances the collaboration between Garena and Anitta, boosting the game's visibility and integrating the artist's character into Free Fire.</p>
+                                    <p>
+                                        <strong>Popcorn Legend</strong> is a fast-paced action game where you collect popcorn to multiply your firepower and navigate through puzzles. Upgrade your heroes and strategically drag to defeat endless waves of zombies!
+                                    </p>
                                 </div>
                             </div>
 
                             <div class="project-links">
                                 <h2>Links</h2>
-                                <h4>This project does not have available links.</h4>
+                                <a href="https://play.google.com/store/apps/details?id=com.zombie.cup.puzzle" target="_blank" class="social-icon device" style="margin-left: 6px">
+                                    <img src="Images/Playstore.png" alt="Google Play">
+                                </a>
+
+                                <a href="https://apps.apple.com/us/app/popcorn-legend/id6739168388" target="_blank" class="social-icon device" style="margin-left: 6px">
+                                    <img src="Images/Appstore.png" alt="App Store">
+                                </a>
                             </div>
 
                             <div class="close">
@@ -464,28 +505,37 @@ function getProjectContent(projectId) {
                             </div>
 `                   ;
             break;
-        case 'project8':
-            videoId = '_rkVQpotLIw?si=jvUrWaw5Q3xtb5Ub';
+        case 'satistory':
             projectContent = `
                         <div class="title-bg">
-                                <h2 class="project-title">Free Fighter</h2>
+                                <h2 class="project-title">Satistory</h2>
                             </div>
 
                             <div class="project-video-BG">
-                            <div class="project-video">
-                                <iframe id="youtubeVideo" width="560" height="315" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allowfullscreen></iframe>
+                            <div class="project-video" style="display:flex;justify-content:center;align-items:center;min-height:660px;">
+                                <iframe id="youtubeVideo"
+                                    src="Playables/Satistory.html"
+                                    style="width:360px;height:640px;border:none;"
+                                    frameborder="0"
+                                    allowfullscreen></iframe>
                             </div>
                             </div>
 
                             <div class="description-bg">
                                 <div class="project-description">
-                                    <p>Free Fighter game was developed in partnership with Garena as a promotional initiative, assisting their collaboration with Capcom and Street Fighter. This project stands out for its strategic collaboration, delivering a dynamic and thrilling gaming experience for fighting game enthusiasts.</p>
+                                    <p>A satisfying casual game. Solve mini-puzzles and experience deeply satisfying interactions.</p>
                                 </div>
                             </div>
 
                             <div class="project-links">
                                 <h2>Links</h2>
-                                <h4>This project does not have available links.</h4>
+                                <a href="https://play.google.com/store/apps/details?id=com.tidy.satis.asmr" target="_blank" class="social-icon device" style="margin-left: 6px">
+                                    <img src="Images/Playstore.png" alt="Google Play">
+                                </a>
+
+                                <a href="https://apps.apple.com/us/app/satistory-tidy-up/id6744819313" target="_blank" class="social-icon device" style="margin-left: 6px">
+                                    <img src="Images/Appstore.png" alt="App Store">
+                                </a>
                             </div>
 
                             <div class="close">
@@ -493,28 +543,33 @@ function getProjectContent(projectId) {
                             </div>
 `                   ;
             break;
-        case 'project9':
-            videoId = '8RWrj6cPtd0?si=NjWYzSLpEmjNZJco';
+        case 'screwpin':
             projectContent = `
                         <div class="title-bg">
-                                <h2 class="project-title">Cash Plane</h2>
+                                <h2 class="project-title">Screw Pin</h2>
                             </div>
 
                             <div class="project-video-BG">
-                            <div class="project-video">
-                                <iframe id="youtubeVideo" width="560" height="315" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allowfullscreen></iframe>
+                            <div class="project-video" style="display:flex;justify-content:center;align-items:center;min-height:660px;">
+                                <iframe id="youtubeVideo"
+                                    src="Playables/Screw Pin.html"
+                                    style="width:360px;height:640px;border:none;"
+                                    frameborder="0"
+                                    allowfullscreen></iframe>
                             </div>
                             </div>
 
                             <div class="description-bg">
                                 <div class="project-description">
-                                    <p>Cash Plane is an exciting virtual reality experience that made its debut at BGS in 2018, presented exclusively for the SBT television channel. This immersive virtual reality adventure takes users on a thrilling journey.</p>
+                                    <p>A casual puzzle game. Remove the pins strategically to progress.</p>
                                 </div>
                             </div>
 
                             <div class="project-links">
                                 <h2>Links</h2>
-                                <h4>This project does not have available links.</h4>
+                                <a href="https://play.google.com/store/apps/details?id=com.nuts.bolts.srcew.puzzle" target="_blank" class="social-icon device" style="margin-left: 6px">
+                                    <img src="Images/Playstore.png" alt="Google Play">
+                                </a>
                             </div>
 
                             <div class="close">
@@ -522,86 +577,37 @@ function getProjectContent(projectId) {
                             </div>
 `                   ;
             break;
-        case 'project10':
-            videoId = 'YI0jJG-jhSo?si=VpCqWNVHP1jQJTjO';
+        case 'tidymaster':
             projectContent = `
                         <div class="title-bg">
-                                <h2 class="project-title">Shofu Ar Experience</h2>
+                                <h2 class="project-title">Tidy Master</h2>
                             </div>
 
                             <div class="project-video-BG">
-                            <div class="project-video">
-                                <iframe id="youtubeVideo" width="560" height="315" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allowfullscreen></iframe>
+                            <div class="project-video" style="display:flex;justify-content:center;align-items:center;min-height:660px;">
+                                <iframe id="youtubeVideo"
+                                    src="Playables/TidyMaster.html"
+                                    style="width:360px;height:640px;border:none;"
+                                    frameborder="0"
+                                    allowfullscreen></iframe>
                             </div>
                             </div>
 
                             <div class="description-bg">
                                 <div class="project-description">
-                                    <p>Shofu Ar Experience is an augmented reality promotional game offering an interactive and educational journey. Immerse yourself in a captivating experience to learn about the molecules constituting Shofu's revolutionary teeth product.</p>
+                                    <p>A casual puzzle game. Organize, sort, and tidy up messy spaces to reveal beautifully arranged environments.</p>
                                 </div>
                             </div>
 
                             <div class="project-links">
                                 <h2>Links</h2>
-                                <h4>This project does not have available links.</h4>
-                            </div>
+                                <a href="https://play.google.com/store/apps/details?id=com.diy.perfect.asmr" target="_blank" class="social-icon device" style="margin-left: 6px">
+                                    <img src="Images/Playstore.png" alt="Google Play">
+                                </a>
 
-                            <div class="close">
-                                <span onclick="closeModal()" target="_blank" class="social-icon quit">&times;</span>
-                            </div>
-`                   ;
-            break;
-        case 'project11':
-            videoId = 'q-s1OCA3Tw8?si=AiH2tMIBBzAgCFpa';
-            projectContent = `
-                        <div class="title-bg">
-                                <h2 class="project-title">Lego Ar Experience</h2>
-                            </div>
-
-                            <div class="project-video-BG">
-                            <div class="project-video">
-                                <iframe id="youtubeVideo" width="560" height="315" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                            </div>
-
-                            <div class="description-bg">
-                                <div class="project-description">
-                                    <p>Lego Ar Experience is an augmented reality game where players take command of a robot built entirely from LEGO bricks.</p>
-                                </div>
-                            </div>
-
-                            <div class="project-links">
-                                <h2>Links</h2>
-                                <h4>This project does not have available links.</h4>
-                            </div>
-
-                            <div class="close">
-                                <span onclick="closeModal()" target="_blank" class="social-icon quit">&times;</span>
-                            </div>
-`                   ;
-            break;
-        case 'project12':
-            videoId = '3cyNc31jY4I?si=w69jaH9h51mRlbdF';
-            projectContent = `
-                        <div class="title-bg">
-                                <h2 class="project-title">Merge Cube</h2>
-                            </div>
-
-                            <div class="project-video-BG">
-                            <div class="project-video">
-                                <iframe id="youtubeVideo" width="560" height="315" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                            </div>
-
-                            <div class="description-bg">
-                                <div class="project-description">
-                                    <p>This project was developed at LIGA (Games and Apps Innovation Laboratory) at the Sorocaba Engineering University (Facens). With an augmented reality interaction, its purpose is to present the university in a more interactive and enjoyable way.</p>
-                                </div>
-                            </div>
-
-                            <div class="project-links">
-                                <h2>Links</h2>
-                                <h4>This project does not have available links.</h4>
+                                <a href="https://apps.apple.com/us/app/tidy-master-satisfeel-asmr/id6738069648" target="_blank" class="social-icon device" style="margin-left: 6px">
+                                    <img src="Images/Appstore.png" alt="App Store">
+                                </a>
                             </div>
 
                             <div class="close">
@@ -615,3 +621,23 @@ function getProjectContent(projectId) {
     return projectContent;
 }
 
+// Check for direct links on page load
+window.addEventListener('DOMContentLoaded', () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    let projectToOpen = urlParams.get('project') || urlParams.get('p');
+
+    // Or check URL hash (e.g., #cakejamout)
+    if (!projectToOpen && window.location.hash) {
+        const hashVal = window.location.hash.substring(1);
+        if (hashVal !== 'projects' && hashVal !== 'about-me' && hashVal !== 'contact') {
+            projectToOpen = hashVal;
+        }
+    }
+
+    if (projectToOpen) {
+        // Delay opening modal slightly to ensure DOM gets ready
+        setTimeout(() => {
+            openModal(projectToOpen);
+        }, 150);
+    }
+});
