@@ -6,10 +6,10 @@
     margin-bottom: 42px;
     margin-top: 35px;
     background-color: #a0a0a0;
-    line-height: 0.5;
-    background-color: rgba(0, 0, 0, 1);
+    line-height: 1;
+    background-color: rgba(0, 0, 0, 0.3);
     border: 3px solid #ffffff;
-    border-radius: 29px;
+    border-radius: 14px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     box-shadow: 0 8px 33px rgba(255, 255, 255, 0.3);
@@ -24,16 +24,17 @@
     transform: translate(-50%, -50%);
     border-radius: 13px;
     border: 2px solid rgba(255, 255, 255, 0.9);
-    /*   background-image: url('Images/Header4.jpg');
+    background-color: rgba(63, 31, 81, 0.4);
+    background-image: url('Images/always-grey.png');
     background-repeat: repeat;
-    background-size: 550px;*/
+    background-size: 45px;
+    background-position: center;
     overflow-y: auto;
     padding-top: 2px;
     padding-right: 20px;
     padding-left: 19px;
     padding: 1000px;
     box-shadow: 0 8px 33px rgba(255, 255, 255, 0.3);
-    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .contact-close {
@@ -41,7 +42,7 @@
     border-radius: 39px;
     width: 100%;
     background-color: #a0a0a0;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 0.3);
     color: #ffffff;
     font-size: 50px;
     cursor: pointer;
@@ -61,7 +62,7 @@
     margin-top: -19px;
     padding-top: 25px;
     padding-bottom: 1px;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 0.3);
     box-shadow: 0 8px 33px rgba(255, 255, 255, 0.3);
 }
 
@@ -73,7 +74,7 @@
     margin-top: 0px;
     padding-top: 25px;
     padding-bottom: 1px;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 0.3);
     box-shadow: 0 8px 33px rgba(255, 255, 255, 0.3);
 }
 
@@ -82,13 +83,13 @@
 }
 
 .contact-icon {
-    margin: 2px; /* Espaçamento entre os ícones */
+    margin: 2px; /* Espaï¿½amento entre os ï¿½cones */
     padding-top:18px;
 }
 
     .contact-icon img {
-        width: 100%; /* Faz com que os ícones ocupem toda a largura disponível */
-        max-width: 43px; /* Define a largura máxima dos ícones */
+        width: 100%; /* Faz com que os ï¿½cones ocupem toda a largura disponï¿½vel */
+        max-width: 43px; /* Define a largura mï¿½xima dos ï¿½cones */
         height: auto;
     }
 
@@ -99,7 +100,7 @@
         border-radius: 19px;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
-        margin-right: -4.5px; /* Ajuste a quantidade de pixels conforme necessário */
+        margin-right: -4.5px; /* Ajuste a quantidade de pixels conforme necessï¿½rio */
         margin-top: 3px;
         margin-bottom: 15px;
     }
@@ -126,7 +127,7 @@
         border-radius: 19px;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
-        margin-right: -4.5px; /* Ajuste a quantidade de pixels conforme necessário */
+        margin-right: -4.5px; /* Ajuste a quantidade de pixels conforme necessï¿½rio */
         margin-top: 3px;
         margin-bottom: 15px;
     }
@@ -155,7 +156,7 @@
         border-radius: 19px;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
-        margin-right: -4.5px; /* Ajuste a quantidade de pixels conforme necessário */
+        margin-right: -4.5px; /* Ajuste a quantidade de pixels conforme necessï¿½rio */
         margin-top: 3px;
         margin-bottom: 15px;
     }
@@ -183,7 +184,7 @@
         border-radius: 19px;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
-        margin-right: -4.5px; /* Ajuste a quantidade de pixels conforme necessário */
+        margin-right: -4.5px; /* Ajuste a quantidade de pixels conforme necessï¿½rio */
         margin-top: 3px;
         margin-bottom: 15px;
     }
@@ -210,7 +211,7 @@
         border-radius: 19px;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
-        margin-right: -4.5px; /* Ajuste a quantidade de pixels conforme necessário */
+        margin-right: -4.5px; /* Ajuste a quantidade de pixels conforme necessï¿½rio */
         margin-top: 3px;
         margin-bottom: 15px;
     }
@@ -238,7 +239,7 @@
         border-radius: 19px;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
-        margin-right: -4.5px; /* Ajuste a quantidade de pixels conforme necessário */
+        margin-right: -4.5px; /* Ajuste a quantidade de pixels conforme necessï¿½rio */
         margin-top: 3px;
         margin-bottom: 15px;
     }
@@ -272,7 +273,7 @@
         border-radius: 19px;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
-        margin-right: -4.5px; /* Ajuste a quantidade de pixels conforme necessário */
+        margin-right: -4.5px; /* Ajuste a quantidade de pixels conforme necessï¿½rio */
         margin-top: 3px;
         margin-bottom: 15px;
     }

@@ -219,13 +219,13 @@ function getProjectContent(projectId) {
                             <div class="contact-description-bg">
                                 <div class="contact-description">
 
-                                    <a target="_blank" class="contact-icon" style="margin-left: 6px">
+                                    <a target="_blank" href="mailto:dinhtrongit22@gmail.com" class="contact-icon" style="margin-left: 6px">
                                         <img src="Images/email.png">
                                     </a>
 
                                     <div class="contact-text">
                                     <p>
-                                        murilo.glasser@hotmail.com
+                                        dinhtrongit22@gmail.com
                                     </p>
                                     </div>
                                 </div>
@@ -240,7 +240,22 @@ function getProjectContent(projectId) {
 
                                     <div class="contact-text">
                                     <p>
-                                        +5515996003474
+                                        +84 372274300
+                                    </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="phone-description-bg">
+                                <div class="contact-description">
+
+                                    <a target="_blank" href="https://t.me/dtrong22" class="contact-icon" style="margin-left: 6px">
+                                        <img src="Images/Telegram.png">
+                                    </a>
+
+                                    <div class="contact-text">
+                                    <p>
+                                        @dtrong22
                                     </p>
                                     </div>
                                 </div>
