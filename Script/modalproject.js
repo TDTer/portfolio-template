@@ -168,16 +168,20 @@ function getProjectContent(projectId) {
                             <div class="description-bg">
                                 <div class="project-description">
                                     <p>
-                                        🕹️ Hey there, I'm Dinh Trong, a dedicated Game Developer specializing in both <strong>Unity</strong> and <strong>Cocos Creator</strong>. I have a strong passion for bringing creative ideas to life and delivering engaging interactive experiences directly to users' fingertips.
-                                    </p>
-                                    <p>
-                                        🚀 I love tackling complex technical challenges and learning new tech stacks. If you're looking for a driven developer with a track record of delivering engaging, cross-platform games, let's connect!
+                                        🚀 I’m not the kind of developer who only sticks to one formula — I like experimenting, learning fast, and improving every project I touch. Whether it’s picking up a new tool, fixing a tricky bug, or figuring out how to make a mechanic feel better, I’m always ready to learn and adapt. I bring a playful mindset, a curious brain, and a strong passion for growing as a game developer in the future.
                                     </p>
                                 </div>
                             </div>
 
                             <div class="project-stack">
                                 <h2>Stack</h2>
+                                <a target="_blank" class="stack-icon" style="margin-left: 6px">
+                                    <img src="Images/UnrealEngine.png" alt="Unreal Engine">
+                                </a>
+
+                                <a target="_blank" class="stack-icon" style="margin-left: 6px">
+                                    <img src="Images/cpp.png" alt="C++">
+                                </a>
                                 <a target="_blank" class="stack-icon" style="margin-left: 6px">
                                     <img src="Images/cocos.png" alt="Cocos Creator">
                                 </a>
@@ -188,7 +192,7 @@ function getProjectContent(projectId) {
 
                                 <a target="_blank" class="stack-icon" style="margin-left: 6px">
                                     <img src="Images/csharp.png" alt="C#">
-                                </a>                             
+                                </a>
 
                                 <a target="_blank" class="stack-icon" style="margin-left: 6px">
                                     <img src="Images/javascript.png" alt="JavaScript">
@@ -622,6 +626,66 @@ function getProjectContent(projectId) {
 
                                 <a href="https://apps.apple.com/us/app/tidy-master-satisfeel-asmr/id6738069648" target="_blank" class="social-icon device" style="margin-left: 6px">
                                     <img src="Images/Appstore.png" alt="App Store">
+                                </a>
+                            </div>
+
+                            <div class="close">
+                                <span onclick="closeModal()" target="_blank" class="social-icon quit">&times;</span>
+                            </div>
+`                   ;
+            break;
+        case 'shootersam':
+            projectContent = `
+                        <div class="title-bg">
+                                <h2 class="project-title">ShooterSam</h2>
+                            </div>
+
+                            <div class="project-video-BG">
+                            <div class="project-video">
+                                <iframe id="youtubeVideo" width="560" height="315" src="https://www.youtube.com/embed/pIrB_SoM1MY" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            </div>
+
+                            <div class="description-bg">
+                                <div class="project-description">
+                                    <p>A third-person shooter game where the player defeats enemies with simple shooting mechanics and fast combat action.</p>
+                                </div>
+                            </div>
+
+                            <div class="project-links">
+                                <h2>Links</h2>
+                                <a href="https://github.com/TDTer/ShooterSam" target="_blank" class="social-icon device" style="margin-left: 6px">
+                                    <img src="Images/Git.png" alt="GitHub Repository">
+                                </a>
+                            </div>
+
+                            <div class="close">
+                                <span onclick="closeModal()" target="_blank" class="social-icon quit">&times;</span>
+                            </div>
+`                   ;
+            break;
+        case 'meleeactiongame':
+            projectContent = `
+                        <div class="title-bg">
+                                <h2 class="project-title">Melee Action Game</h2>
+                            </div>
+
+                            <div class="project-video-BG">
+                            <div class="project-video">
+                                <iframe id="youtubeVideo" width="560" height="315" src="https://www.youtube.com/embed/ID8P43UHJd4" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            </div>
+
+                            <div class="description-bg">
+                                <div class="project-description">
+                                    <p>Game combat with melee-focused actions, enemy aggression, and a polished HUD system that supports fast decision-making in combat encounters.</p>
+                                </div>
+                            </div>
+
+                            <div class="project-links">
+                                <h2>Links</h2>
+                                <a href="https://github.com/TDTer/3D-Action-Game" target="_blank" class="social-icon device" style="margin-left: 6px">
+                                    <img src="Images/Git.png" alt="GitHub Repository">
                                 </a>
                             </div>
 
